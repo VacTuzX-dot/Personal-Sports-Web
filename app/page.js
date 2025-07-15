@@ -105,7 +105,7 @@ export default function Home() {
                 initial={{ y: 80, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="text-7xl md:text-9xl font-extrabold bg-gradient-to-r from-cyan-400 via-purple-500 to-blue-400 bg-clip-text text-transparent mb-3 tracking-tight drop-shadow-lg"
+                className="text-4xl sm:text-6xl md:text-7xl lg:text-9xl font-extrabold bg-gradient-to-r from-cyan-400 via-purple-500 to-blue-400 bg-clip-text text-transparent mb-2 tracking-tight drop-shadow-lg"
               >
                 TAEKWONDO
               </motion.h1>
@@ -113,7 +113,7 @@ export default function Home() {
                 initial={{ y: 80, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="text-6xl md:text-8xl bg-gradient-to-r from-cyan-400 via-purple-500 to-blue-400 bg-clip-text text-transparent pt-3 mb-6 tracking-tight drop-shadow-lg"
+                className="text-3xl sm:text-5xl md:text-6xl lg:text-8xl bg-gradient-to-r from-cyan-400 via-purple-500 to-blue-400 bg-clip-text text-transparent pt-2 mb-4 tracking-tight drop-shadow-lg"
               >
                 เทควันโด
               </motion.h1>
@@ -121,7 +121,7 @@ export default function Home() {
                 initial={{ y: 40, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="text-2xl md:text-3xl text-gray-300 font-light tracking-wide"
+                className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-300 font-light tracking-wide"
               >
                 The Art of Kicking and Punching
               </motion.p>
@@ -156,32 +156,28 @@ export default function Home() {
             />
           </section>
           {/* Personal Bio Section */}
-          <section className="relative py-16 px-4 md:px-8">
-            <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center bg-gradient-to-br from-[#232136]/60 to-[#18181b]/80 rounded-3xl shadow-xl p-6">
+          <section className="relative py-8 sm:py-12 md:py-16 px-4 md:px-8">
+            <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center bg-gradient-to-br from-[#232136]/60 to-[#18181b]/80 rounded-2xl md:rounded-3xl shadow-xl p-4 sm:p-6 md:p-8">
               <motion.div
                 initial={{ opacity: 0, x: -40 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
+                className="flex justify-center md:justify-start"
               >
                 <Image
                   src="/image/IMG_3958.JPG"
                   alt="Profile Picture"
-                  width={320}
-                  height={320}
-                  className="rounded-2xl object-cover border-4 border-cyan-400 shadow-lg"
+                  width={280}
+                  height={280}
+                  className="w-64 sm:w-72 md:w-80 rounded-xl md:rounded-2xl object-cover border-4 border-cyan-400 shadow-lg"
                 />
               </motion.div>
-              <motion.div
-                initial={{ opacity: 0, x: 40 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5 }}
-                viewport={{ once: true }}
-              >
-                <h2 className="text-3xl md:text-4xl font-bold text-cyan-300 mb-4 drop-shadow">
+              <motion.div>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-cyan-300 mb-3 md:mb-4 drop-shadow">
                   ประวัติส่วนตัว
                 </h2>
-                <p className="text-gray-300 text-base leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
                   สวัสดีครับ ผมชื่อลีโอ (Leo) อายุปัจจุบัน 17 ปี
                   เกิดที่เชียงใหม่ ปัจจุบันกำลังศึกษาอยู่ที่
                   วิทยาลัยเทคนิคเชียงใหม่ ผมเริ่มฝึกเทควันโดตั้งแต่อายุ 6
@@ -217,7 +213,7 @@ export default function Home() {
                 initial={{ y: 80, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1, delay: 0.5 }}
-                className="text-3xl md:text-5xl font-semibold bg-gradient-to-r from-cyan-400 via-purple-500 to-blue-400 bg-clip-text text-transparent mb-3 tracking-tight drop-shadow-lg py-3"
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold bg-gradient-to-r from-cyan-400 via-purple-500 to-blue-400 bg-clip-text text-transparent mb-3 tracking-tight drop-shadow-lg py-2 md:py-3"
               >
                 ประวัติเทควันโด
               </motion.h1>
@@ -226,7 +222,7 @@ export default function Home() {
                 initial={{ y: 40, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1, delay: 1 }}
-                className="text-base md:text-lg text-gray-300 font-normal tracking-wide max-w-2xl mx-auto"
+                className="text-sm sm:text-base md:text-lg text-gray-300 font-normal tracking-wide max-w-2xl mx-auto px-4 md:px-0"
               >
                 เทควันโดเป็นศิลปะการต่อสู้ที่มีรากฐานจากเกาหลี
                 โดยมีต้นกำเนิดย้อนกลับไปถึงสมัยโบราณราว 50
@@ -279,18 +275,12 @@ export default function Home() {
           </section>
           {/* Why I Love Taekwondo Section */}
           <section className="relative py-20 px-4 md:px-8">
-            <div className="max-w-5xl mx-auto bg-gradient-to-br from-[#232136]/60 to-[#18181b]/80 rounded-3xl shadow-xl p-8">
-              <motion.div
-                initial={{ opacity: 0, y: 60 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-                className="text-center mb-16"
-              >
-                <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent pt-3 mb-8 drop-shadow">
+            <div className="max-w-5xl mx-auto bg-gradient-to-br from-[#232136]/60 to-[#18181b]/80 rounded-3xl shadow-xl p-4 sm:p-6 md:p-8">
+              <motion.div className="text-center mb-8 md:mb-16">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent pt-2 mb-4 md:mb-8 drop-shadow">
                   ทำไมถึงชอบเทควันโด
                 </h2>
-                <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-tight">
+                <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-tight px-4 md:px-0">
                   ทำไมผมถึงชอบกีฬานี้ เพราะว่าเป็นการฝึกความอดทน ทักษะการต่อสู้
                   และการพัฒนาไหวพริบ กีฬาเทควันโด
                   ยังสอนให้เรามีระเบียบวินัยและเคารพในตัวเองและผู้อื่น
@@ -314,7 +304,7 @@ export default function Home() {
                   viewport={{ once: true }}
                   className="space-y-6"
                 >
-                  <div className="backdrop-blur-sm bg-white/5 border border-white/10 rounded-2xl p-8 shadow-lg">
+                  <div className="backdrop-blur-sm bg-white/5 border border-white/10 rounded-2xl p-4 sm:p-6 md:p-8 shadow-lg">
                     <h3 className="text-2xl font-semibold mb-4 text-cyan-300">
                       TAEKWONDO PRECEPTS <br />
                       บทบัญญัติเทควันโด
@@ -400,7 +390,7 @@ export default function Home() {
               >
                 ทักษะที่ใช้ในการต่อสู้
               </motion.h2>
-              <div className="grid md:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
                 {[
                   {
                     title: "การแตะ & Kicks",
@@ -435,7 +425,7 @@ export default function Home() {
                       backgroundColor: "rgba(255,255,255,0.05)",
                       transition: { duration: 0.2 },
                     }}
-                    className="backdrop-blur-sm bg-gradient-to-br from-white/5 to-white/10 border border-white/10 rounded-3xl p-8 transition-all shadow-xl hover:shadow-2xl"
+                    className="backdrop-blur-sm bg-gradient-to-br from-white/5 to-white/10 border border-white/10 rounded-2xl md:rounded-3xl p-4 sm:p-6 md:p-8 transition-all shadow-xl hover:shadow-2xl"
                   >
                     <div
                       className={`text-3xl font-bold text-center mb-4 bg-gradient-to-r ${technique.gradient} bg-clip-text text-transparent`}
@@ -456,19 +446,13 @@ export default function Home() {
 
           {/* Footer */}
           <footer className="relative border-t border-white/10 bg-gradient-to-br from-[#232136]/70 to-[#18181b]/90 backdrop-blur-sm">
-            <div className="max-w-4xl mx-auto px-4 md:px-8 py-8">
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="flex flex-col md:flex-row md:items-center md:justify-between gap-6"
-              >
+            <div className="max-w-4xl mx-auto px-4 py-6 sm:py-8">
+              <motion.div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 sm:gap-6">
                 <div>
-                  <h3 className="text-xl md:text-2xl font-semibold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent mb-2 drop-shadow">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-semibold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent mb-2 drop-shadow">
                     TAEKWONDO
                   </h3>
-                  <p className="text-gray-400 text-xs md:text-sm leading-relaxed max-w-md">
+                  <p className="text-xs sm:text-sm text-gray-400 leading-relaxed max-w-md">
                     Website
                     นี้จัดขึ้นขึ้นเป็นส่วนนึงของงานรายวิชาคอมพิวเตอร์กราฟิกและการออกแบบ
                     31905-2002 วิทยาลัยเทคนิคเชียงใหม่

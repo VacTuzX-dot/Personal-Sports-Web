@@ -222,7 +222,7 @@ export default function Home() {
                 initial={{ y: 40, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1, delay: 1 }}
-                className="text-sm sm:text-base md:text-lg text-gray-300 font-normal tracking-wide max-w-2xl mx-auto px-4 md:px-0"
+                className="text-sm sm:text-base md:text-lg text-gray-300 font-normal tracking-wide max-w-2xl mx-auto px-4 md:px-3"
               >
                 เทควันโดเป็นศิลปะการต่อสู้ที่มีรากฐานจากเกาหลี
                 โดยมีต้นกำเนิดย้อนกลับไปถึงสมัยโบราณราว 50
